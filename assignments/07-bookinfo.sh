@@ -1,5 +1,3 @@
-mkdir 62070166
-
 git clone -b dev git@github.com:WSBoos/itkmitl-bookinfo-details.git ~/62070166/itkmitl-bookinfo-details
 docker build -t image_details ~/62070166/itkmitl-bookinfo-details/
 docker run -d --name details -p 8081:8081 image_details
