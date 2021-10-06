@@ -27,7 +27,7 @@ services:
     build: reviews/
     image: ghcr.io/wsboos/bookinfo-reviews:dev
     ports:
-      - "9080:9080"
+      - "8082:8082"
     environment:
       ENABLE_RATINGS: "true"
       STAR_COLOR: LemonChiffon
@@ -40,7 +40,7 @@ services:
     environment:
       DETAILS_HOSTNAME: http://details:8081
       RATINGS_HOSTNAME: http://ratings:8080
-      REVIEWS_HOSTNAME: http://reviews:9080
+      REVIEWS_HOSTNAME: http://reviews:8082
 
 
 
